@@ -3,11 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="styles.scss" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
     <script type="text/javascript" src="js/index.js" defer></script>
     <title>Wiser | Junior Front End Developer Test</title>
   </head>
-  <body>
-    <h1>Wiser | Junior Front End Developer Test</h1>
+  <body id="colo">
+    <h1 class="wiser">Wiser | Junior Front End Developer Test</h1>
+
+    <div class="outer-wrapper">
+      <div class="state state1" id="wrapper1">
+        <h1 id="title">Title goes here</h1>
+        <h2 id="text">Subtitle goes here</h2>
+        <h2 id="insert"></h2>
+        <div onclick="change(); state(); opacity(); toggle(); rotate();" class="toggle">
+            <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M11 6.75736V15.2426" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.75735 11H15.2426" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          <h4 id="show-hide" class="show-hide">Show description</h4>
+        </div>
+      </div>
+
+      <div class="state state2" id="wrapper2">
+        <h2 id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+        <h2 id="insert2"></h2>
+        <div onclick="change(); state(); opacity(); toggle(); rotate(); title();" class="toggle">
+          <svg id="button" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+          <h4 id="show-hide" class="show-hide">Hide description</h4>
+        </div>
+  </div>
+
+  <a class="jf" href="https://jfairclough.com" target="_blank">John Fairclough</a>
   </body>
 </html>
